@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
-    * {
+      .gumroad-button {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -24,6 +24,7 @@
       display: grid;
       place-items: center;
     }
+    
 
     .wrapper {
       padding-top: 10px;
@@ -32,7 +33,7 @@
     }
 
     .fill {
-      width: 50px;
+      width: 75px;
       height: 50px;
       padding: 4%;
       color: #fff;
@@ -41,7 +42,7 @@
       cursor: pointer;
       position: relative;
       background-color: rgba(159, 5, 5, 0);
-      margin: 7px;
+      margin: 8px;
     }
 
     .fill::after {
@@ -59,6 +60,11 @@
       top: 0px;
       left: 0px;
     }
+    
+      .gumroad-button:hover {
+        color: white;
+        background-color: rgb(230, 11, 201);
+      }
 
 
     .icon {
@@ -75,16 +81,7 @@
       background-color: #23c8c8;
     }
 
-    .facebook:hover,
-    .facebook::after {
-      background-color: #4267B2;
-    }
 
-    
-    .facebook:hover,
-    .facebook::after {
-      background-color: #4267B2;
-    }
 
     .instagram:hover,
     .instagram::after {
@@ -145,11 +142,7 @@
 
     <div class="wrapper">
 
-      <!-- Start blog Icon -->
-      <div id="blog" onclick="navigate(this.id)" class="fill  blog">
-        <span class="icon"><i class="fa-solid fa-blog"></i></span>
-      </div>
-      <!-- End blog Icon -->
+
 
 
       <!-- Start email Icon -->
@@ -159,11 +152,7 @@
       <!-- End email Icon -->
 
 
-      <!-- Start facebook Icon -->
-      <div id="facebook" onclick="navigate(this.id)" class="fill facebook">
-        <span class="icon"><i class="fab fa-facebook"></i></span>
-      </div>
-      <!-- End facebook Icon -->
+
 
 
       <!-- Start instagram Icon -->
@@ -173,11 +162,7 @@
       <!-- End instagram Icon -->
 
 
-      <!-- Start linkedin Icon -->
-      <div id="linkedin" onclick="navigate(this.id)" class="fill linkedin">
-        <span class="icon"><i class="fab fa-linkedin"></i></span>
-      </div>
-      <!-- End linkedin Icon -->
+
 
 
 
@@ -187,22 +172,22 @@
       </div>
       <!-- End pinterest Icon -->
 
+</div>
 
-
-
-
+      
     </div>
+
     <br>
-
-<script src="https://gumroad.com/js/gumroad.js"></script>
-<a class="gumroad-button" href="https://blueandpurple.gumroad.com/">  
- <b>
-   <p style="color: rgb(230, 11, 201);font-size: 25px;">Gumroad </p> 
- </b> Blue and Purple</a>
-
  
-
-
+    <!-- gumroad link -->
+    <script src="https://gumroad.com/js/gumroad.js"></script>
+    
+    <a class="gumroad-button" href="https://blueandpurple.gumroad.com/">
+      <img class="gumroad-icon" src="https://gumroad.com/favicon.ico" alt="Gumroad Icon" />
+      Buy Blue and Purple Now
+    </a>
+    
+ 
 
 
 
@@ -211,39 +196,22 @@
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
-        if (id === "blog")
-          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
+      
 
-        else if (id === "email") {
-          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
+       if (id === "email") {
+          window.open("mailto:potato007salad@gmail.com", '_blank').focus(); //Add your email after "mailto:""
         }
         else if (id === "facebook") {
           window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
         }
         else if (id === "instagram") {
-          window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
+          window.open("https://www.instagram.com/blue101purple/", '_blank').focus(); //Add the url to your instagram account
         }
-        else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "twitter") {
-          window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "reddit") {
-          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
-        }
-        else if (id === "tiktok") {
-          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
-        }
-        else if (id === "youtube") {
-          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
-        }
+       
         else if (id === "pinterest") {
-          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://www.pinterest.com/potato007salad/", '_blank').focus(); //Add the url to your pinterest account
         }
-        else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
-        }
+    
       }
       
 
