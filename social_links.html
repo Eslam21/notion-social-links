@@ -34,14 +34,14 @@
     .fill {
       width: 50px;
       height: 50px;
-      padding: 2%;
+      padding: 4%;
       color: #fff;
       outline: 0;
-      border: 2px solid black;
+      border: 2px solid rgb(27, 24, 27);
       cursor: pointer;
       position: relative;
-      background-color: rgba(0, 0, 0, 0);
-      margin: 5px;
+      background-color: rgba(159, 5, 5, 0);
+      margin: 7px;
     }
 
     .fill::after {
@@ -50,8 +50,8 @@
       z-index: -1;
       position: absolute;
       height: 100%;
-      top: 5px;
-      left: 5px;
+      top: 3px;
+      left: 3px;
       transition: 0.2s;
     }
 
@@ -75,6 +75,12 @@
       background-color: #23c8c8;
     }
 
+    .facebook:hover,
+    .facebook::after {
+      background-color: #4267B2;
+    }
+
+    
     .facebook:hover,
     .facebook::after {
       background-color: #4267B2;
@@ -174,31 +180,6 @@
       <!-- End linkedin Icon -->
 
 
-      <!-- Start twitter Icon -->
-      <div id="twitter" onclick="navigate(this.id)" class="fill twitter">
-        <span class="icon"><i class="fab fa-twitter"></i></span>
-      </div>
-      <!-- End twitter Icon -->
-
-
-      <!-- Start reddit Icon -->
-      <div id="reddit" onclick="navigate(this.id)" class="fill reddit">
-        <span class="icon"><i class="fab fa-reddit"></i></span>
-      </div>
-      <!-- End reddit Icon -->
-
-
-      <!-- Start tiktok Icon -->
-      <div id="tiktok" onclick="navigate(this.id)" class="fill tiktok">
-        <span class="icon"><i class="fab fa-tiktok"></i></span>
-      </div>
-      <!-- End tiktok Icon -->
-
-      <!-- Start youtube Icon -->
-      <div id="youtube" onclick="navigate(this.id)" class="fill youtube">
-        <span class="icon"><i class="fab fa-youtube"></i></span>
-      </div>
-      <!-- End youtube Icon -->
 
       <!-- Start pinterest Icon -->
       <div id="pinterest" onclick="navigate(this.id)" class="fill pinterest">
@@ -207,14 +188,20 @@
       <!-- End pinterest Icon -->
 
 
-      <!-- Start telegram Icon -->
-      <div id="telegram" onclick="navigate(this.id)" class="fill telegram">
-        <span class="icon"><i class="fab fa-telegram"></i></span>
-      </div>
-      <!-- End telegram Icon -->
+
 
 
     </div>
+    <br>
+
+<script src="https://gumroad.com/js/gumroad.js"></script>
+<a class="gumroad-button" href="https://blueandpurple.gumroad.com/">  
+ <b>
+   <p style="color: rgb(230, 11, 201);font-size: 25px;">Gumroad </p> 
+ </b> Blue and Purple</a>
+
+ 
+
 
 
 
@@ -258,8 +245,10 @@
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         }
       }
+      
 
     </script>
+
 
 
 
