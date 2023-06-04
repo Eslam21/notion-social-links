@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -12,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
   <style>
-      .gumroad-button {
+    .gumroad-button {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -22,12 +21,10 @@
       display: grid;
       place-items: center;
     }
-    
 
     .wrapper {
       padding-top: 10px;
       display: inline-flex;
-
     }
 
     .fill {
@@ -58,12 +55,11 @@
       top: 0px;
       left: 0px;
     }
-    
-      .gumroad-button:hover {
-        color: white;
-        background-color: rgb(230, 11, 201);
-      }
 
+    .gumroad-button:hover {
+      color: white;
+      background-color: rgb(230, 11, 201);
+    }
 
     .icon {
       font-size: 1em;
@@ -78,8 +74,6 @@
     .email::after {
       background-color: #23c8c8;
     }
-
-
 
     .instagram:hover,
     .instagram::after {
@@ -136,89 +130,59 @@
 
 <body>
 
-  <body>
-
-    <div class="wrapper">
-
-
-
-
-      <!-- Start email Icon -->
-      <div id="email" onclick="navigate(this.id)" class="fill email">
-        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
-      </div>
-      <!-- End email Icon -->
-
-
-
-
-
-      <!-- Start instagram Icon -->
-      <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
-        <span class="icon"><i class="fab fa-instagram"></i></span>
-      </div>
-      <!-- End instagram Icon -->
-
-
-
-
-
-
-      <!-- Start pinterest Icon -->
-      <div id="pinterest" onclick="navigate(this.id)" class="fill pinterest">
-        <span class="icon"><i class="fab fa-pinterest"></i></span>
-      </div>
-      <!-- End pinterest Icon -->
-
-</div>
-
-      
+  <div class="wrapper">
+    <!-- Start email Icon -->
+    <div id="email" onclick="navigate(this.id)" class="fill email">
+      <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
     </div>
+    <!-- End email Icon -->
 
-    <br>
-
-    
-    <script src="https://gumroad.com/js/gumroad.js"></script>
-
-    <div class="gumroad-button" onclick="window.open('https://blueandpurple.gumroad.com/', '_blank')">
-      <img class="gumroad-icon" src="https://gumroad.com/favicon.ico" alt="Gumroad Icon" />
-      Buy Blue and Purple
+    <!-- Start instagram Icon -->
+    <div id="instagram" onclick="navigate(this.id)" class="fill instagram">
+      <span class="icon"><i class="fab fa-instagram"></i></span>
     </div>
-    
-    
- 
+    <!-- End instagram Icon -->
 
+    <!-- Start pinterest Icon -->
+    <div id="pinterest" onclick="navigate(this.id)" class="fill pinterest">
+      <span class="icon"><i class="fab fa-pinterest"></i></span>
+    </div>
+    <!-- End pinterest Icon -->
 
+    <!-- Start twitter Icon -->
+    <div id="twitter" onclick="navigate(this.id)" class="fill twitter">
+      <span class="icon"><i class="fab fa-twitter"></i></span>
+    </div>
+    <!-- End twitter Icon -->
+  </div>
 
-    <script>
-      function navigate(id) {
+  <br>
 
-        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
+  <script src="https://gumroad.com/js/gumroad.js"></script>
 
-      
+  <div class="gumroad-button" onclick="window.open('https://blueandpurple.gumroad.com/', '_blank')">
+    <img class="gumroad-icon" src="https://gumroad.com/favicon.ico" alt="Gumroad Icon" />
+    Buy Blue and Purple
+  </div>
 
-       if (id === "email") {
-          window.open("mailto:potato007salad@gmail.com", '_blank').focus(); //Add your email after "mailto:""
-        }
-        else if (id === "facebook") {
-          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
-        }
-        else if (id === "instagram") {
-          window.open("https://www.instagram.com/blue101purple/", '_blank').focus(); //Add the url to your instagram account
-        }
-       
-        else if (id === "pinterest") {
-          window.open("https://www.pinterest.com/potato007salad/", '_blank').focus(); //Add the url to your pinterest account
-        }
-    
+  <script>
+    function navigate(id) {
+      // if you want the URL to open in the same window use '_parent' instead of '_blank'
+      if (id === "email") {
+        window.open("mailto:potato007salad@gmail.com", '_blank').focus();
+      } else if (id === "facebook") {
+        window.open("https://facebook.com/", '_blank').focus();
+      } else if (id === "instagram") {
+        window.open("https://www.instagram.com/blue101purple/", '_blank').focus();
+      } else if (id === "pinterest") {
+        window.open("https://www.pinterest.com/potato007salad/", '_blank').focus();
+      } else if (id === "twitter") {
+        window.open("https://twitter.com/BlueanndPurple", '_blank').focus();
+        // Replace "your_twitter_account" with your actual Twitter handle or profile URL
       }
-      
+    }
+  </script>
 
-    </script>
-
-
-
-
-  </body>
+</body>
 
 </html>
